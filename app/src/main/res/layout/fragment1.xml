@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#76b1da">
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/sp_machine"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/spsa_pressed"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:dropDownHorizontalOffset="50dp"
+        android:dropDownVerticalOffset="35dp"
+        android:gravity="center" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp"
+        android:id="@+id/frameLayout">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/iv01"
+            android:layout_gravity="center"
+            android:background="#b05050" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/iv02"
+            android:layout_gravity="center"
+            android:background="#0da041" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rl_state"
+            android:background="#3aa3ae">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="设备名称："
+                android:id="@+id/textView12"
+                android:layout_marginStart="42dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0000"
+                android:id="@+id/tv_name"
+                android:layout_alignTop="@+id/textView12"
+                android:layout_toEndOf="@+id/textView12"
+                android:textColor="#0c5399"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="设备编号："
+                android:id="@+id/textView17"
+                android:textColor="#000000"
+                android:layout_below="@+id/textView12"
+                android:layout_alignStart="@+id/textView12"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/_0000"
+                android:id="@+id/tv_id"
+                android:textColor="#0c5399"
+                android:layout_centerHorizontal="true"
+                android:layout_alignBottom="@+id/textView17"
+                android:layout_alignLeft="@+id/tv_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="设备地点："
+                android:id="@+id/textView19"
+                android:textColor="#000000"
+                android:layout_below="@+id/textView17"
+                android:layout_alignStart="@+id/textView17"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0000"
+                android:id="@+id/tv_add"
+                android:textColor="#0c5399"
+                android:layout_alignTop="@+id/textView19"
+                android:layout_centerHorizontal="true"
+                android:layout_alignLeft="@+id/tv_id" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="设备状态："
+                android:id="@+id/textView21"
+                android:textColor="#000000"
+                android:layout_below="@+id/textView19"
+                android:layout_alignStart="@+id/textView19"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0000"
+                android:id="@+id/tv_state"
+                android:textColor="#0c5399"
+                android:layout_alignTop="@+id/textView21"
+                android:layout_centerHorizontal="true"
+                android:layout_alignLeft="@+id/tv_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="设备简介："
+                android:id="@+id/textView23"
+                android:textColor="#000000"
+                android:layout_alignLeft="@+id/textView21"
+                android:layout_below="@+id/textView21"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="0000"
+                android:id="@+id/tv_pra"
+                android:textColor="#0c5399"
+                android:layout_alignLeft="@+id/tv_add"
+                android:layout_alignBottom="@+id/textView23" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Test"
+                android:id="@+id/tv_test"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+                android:textColor="#030303"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_info"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/frameLayout" />
+
+</RelativeLayout>
