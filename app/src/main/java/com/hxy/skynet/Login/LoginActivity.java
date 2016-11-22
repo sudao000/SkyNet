@@ -129,10 +129,10 @@ public class LoginActivity extends Activity implements OnClickListener {
                 break;
             case R.id.bt_pwd_eye:
                 if(tv_password.getInputType() == (InputType.TYPE_CLASS_TEXT|InputType.TYPE_TEXT_VARIATION_PASSWORD)){
-                    bt_pwd_eye.setBackgroundResource(R.drawable.set0);
+                    bt_pwd_eye.setBackgroundResource(R.drawable.eye);
                     tv_password.setInputType(InputType.TYPE_CLASS_TEXT|InputType.TYPE_TEXT_VARIATION_NORMAL);
                 }else{
-                    bt_pwd_eye.setBackgroundResource(R.drawable.set1);
+                    bt_pwd_eye.setBackgroundResource(R.drawable.close_eye);
                     tv_password.setInputType(InputType.TYPE_CLASS_TEXT|InputType.TYPE_TEXT_VARIATION_PASSWORD);
                 }
                 tv_password.setSelection(tv_password.getText().toString().length());

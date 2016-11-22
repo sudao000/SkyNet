@@ -1,6 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:custom="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:fitsSystemWindows="true">
@@ -29,29 +28,19 @@
                 android:maxLength="20"
                 android:paddingLeft="55dp"
                 android:paddingRight="60dp"
-                android:textSize="18dp"
+                android:textSize="16dp"
                 android:textColor="#000000"
-                android:inputType="text"></EditText>
+                android:inputType="text"
+                android:paddingBottom="7dp"></EditText>
 
             <ImageView
                 android:layout_width="22dp"
                 android:layout_height="21dp"
                 android:layout_gravity="left|center_vertical"
                 android:layout_marginStart="8dp"
-                android:background="@drawable/foot_icon02_on"
-                android:visibility="visible" />
-
-            <TextView
-                android:id="@+id/contry_sn"
-                android:layout_width="40dp"
-                android:layout_height="50dp"
-                android:layout_gravity="left|center_vertical"
-                android:layout_marginTop="4dp"
-                android:gravity="center"
-                android:text="+62"
-                android:textColor="@android:color/black"
-                android:textSize="18sp"
-                android:visibility="invisible" />
+                android:background="@drawable/user"
+                android:visibility="visible"
+                android:layout_marginBottom="0dp" />
 
             <Button
                 android:id="@+id/bt_username_clear"
@@ -79,30 +68,32 @@
                 android:maxLength="20"
                 android:paddingLeft="55dp"
                 android:paddingRight="60dp"
-                android:textSize="18dp"
-                android:textColor="#000000"></EditText>
+                android:textSize="16dp"
+                android:textColor="#000000"
+                android:paddingBottom="7dp"></EditText>
 
             <ImageView
-                android:layout_width="24dp"
+                android:layout_width="21dp"
                 android:layout_height="22dp"
                 android:layout_gravity="left|center_vertical"
                 android:layout_marginStart="7dp"
-                android:background="@drawable/foot_icon04_on" />
+                android:background="@drawable/passward"
+                android:layout_marginBottom="3dp" />
 
             <Button
                 android:id="@+id/bt_pwd_eye"
-                android:layout_width="23dp"
-                android:layout_height="23dp"
+                android:layout_width="26dp"
+                android:layout_height="18dp"
                 android:layout_gravity="right|center_vertical"
                 android:layout_marginRight="10dp"
-                android:background="@drawable/foot_icon03_on" />
+                android:background="@drawable/close_eye" />
 
             <Button
                 android:id="@+id/bt_pwd_clear"
                 android:layout_width="23dp"
                 android:layout_height="23dp"
                 android:layout_gravity="right|center_vertical"
-                android:layout_marginRight="33dp"
+                android:layout_marginRight="40dp"
                 android:background="@android:drawable/ic_menu_close_clear_cancel"
                 android:visibility="invisible" />
         </FrameLayout>
@@ -153,16 +144,16 @@
 
     </RelativeLayout>
 
-    <TextView
+    <Button
         android:id="@+id/registfer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#00000000"
         android:gravity="center"
+        android:singleLine="true"
         android:text="天网系统，您的贴心设备管家！"
-        android:textSize="18sp"
-        android:layout_above="@+id/remember_layout000"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="17dp"
-        android:textColor="#000000" />
+        android:textSize="20sp"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

@@ -172,7 +172,7 @@ public class Chart extends Fragment {
 
 
     public void getState(String date) {
-        Globals.list_sb.clear();
+
         String url = getURL(Globals.machineName, date);
         OkHttpUtils.ResultCallback<String> callback = new OkHttpUtils.ResultCallback<String>() {
 
@@ -180,6 +180,7 @@ public class Chart extends Fragment {
             public void onSuccess(String response) {
                 //Log.i("response-------------->", response);
                 if (response.contains("state")) {
+                    Globals.list_sb.clear();
                     String rs[] = response.split("\\}");
                     for (int i = 1; i < rs.length; i++) {
                         rs[i] = rs[i] + "}";

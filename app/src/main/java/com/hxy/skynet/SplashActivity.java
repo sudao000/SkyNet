@@ -36,7 +36,7 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         userInfo = getSharedPreferences("userinfo", MODE_PRIVATE);
-         name=userInfo.getString("name",null);
+        name=userInfo.getString("name",null);
         Log.i("name-->",name+"为空");
         new Thread(new Mythread()).start();
 
@@ -49,7 +49,7 @@ public class SplashActivity extends AppCompatActivity {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-           mHandler.sendEmptyMessage(1);
+            mHandler.sendEmptyMessage(1);
 
         }
     }
